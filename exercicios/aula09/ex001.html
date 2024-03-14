@@ -13,13 +13,30 @@
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
+    <h2><strong>DOM(Document Object Model)</strong></h2>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
-    <div>
+    <div id="msg">
         Clique em mim
     </div>
     <script>
-        
+        const corpo = document.body
+        const p1 = document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerHTML)
+        p1.style.color = 'Red'
+        corpo.style.backgroundColor = 'Green'
+        /*
+        const d = document.getElementById('msg')
+        d.style.backgroundColor = 'yellow'
+        d.innerText = 'Olá'
+        */
+        //window.document.getElementById('msg').innerText = 'Olá'
+        const d = document.querySelector('div#msg')
+        d.style.color = 'blue'
+        d.style.backgroundColor = 'red'
+        d.innerHTML = '<h1>Olá<h1/>'
+        const teste = corpo.getElementsByTagName('h1')[0]
+        teste.style.color = 'White'
     </script>
 </body>
 </html>

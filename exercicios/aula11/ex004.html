@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        strong{
+            color: red;
+        }
+        body{
+            background-color: rgba(181, 255, 71, 0.281);
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 1.15em;
+            font-variant: small-caps;
+            margin: 15px;
+        }
+        input{
+            font-size: 14px;
+            border-radius: 5px;
+            box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.452);
+        }
+        input#button{
+            height: 30px;
+            width: 70px;
+            position: absolute;
+            left: 48vw;
+        }
+        div{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é Brasileiro?</h1>
+    <h2>Descubra abaixo!</h2>
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" autocomplete="off" placeholder="Digite seu nome">
+    </p>
+    <p>
+        <label for="iidade">Idade</label>
+        <input type="number" name="idade" id="iidade" autocomplete="off" placeholder="Digite sua idade">
+    </p>
+    <p>
+        <label for="isex">Sexo</label>
+        <input type="text" name="sex" id="isex" autocomplete="off" placeholder="Masculino ou Feminino">
+    </p>
+    <p>
+        <label for="ipais">País</label>
+        <input type="text" name="pais" id="ipais" autocomplete="off" placeholder="Digite seu país de origem">
+    </p>
+    <input type="button" value="Verificar" onclick="verify()" id="button">
+    <div id="res"></div>
+    <script>
+        
+        function verify(){
+        var n = document.getElementById('inome')
+        var i = document.getElementById('iidade')
+        var s = document.getElementById('isex')
+        var p = document.getElementById('ipais')
+        var nome = (n.value)
+        var idade = (i.value)
+        var sexo = (s.value)
+        var país = (p.value)
+        var res = document.getElementById('res')
+        res.innerHTML = (`<p>Olá, ${nome}! sei que você tem ${idade} anos de idade e você é do sexo ${sexo}</p>`)
+            if (país == 'Brasil'){
+                res.innerHTML += (`<p>E também sei que você é Brasileiro!</p>`)
+            } else{
+                res.innerHTML += (`<p>E também sei que você não é Brasileiro, você é do seguinte país: ${país}</p>`)
+            }
+
+        }
+    </script>
+</body>
+</html>

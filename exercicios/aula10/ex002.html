@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <p>
+        <label for="ival1">Valor 1</label>
+        <input type="number" name="val1" id="ival1" required placeholder="Digite um número">   
+    </p>
+    <p>
+        <label for="ival2">Valor 2</label>
+        <input type="number" name="val2" id="ival2" required placeholder="digite um número">
+    </p>
+    <input type="button" value="Somar" onclick="somar()" style="height: 40px; width: 150px; margin-bottom: 20px; margin-left: 50px; background-color: darkslategray; color: white; border-radius: 9px;">
+    <div style="background-color: rgb(170, 170, 170); height: 20px; width: 190px; text-align: center; margin-left: 30px; padding: 0px;">
+        Resultado
+    </div>
+    <script>
+        function somar(){
+            const val1 = document.getElementById('ival1')
+            const val2 = document.getElementById('ival2')
+            const n1 = Number(val1.value)
+            const n2 = Number(val2.value)
+            const r = n1 + n2
+            const div = document.getElementsByTagName('div')[0]
+            div.innerHTML = `A soma dos valores é <strong>${r}</strong>`
+            div.style.color = 'darkblue'
+        }
+    </script>
+    
+</body>
+</html>
