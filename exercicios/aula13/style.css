@@ -1,0 +1,41 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+body{
+    background-color: #084061;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: 3em;
+}
+section{
+    background-color: white;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.514);
+}
+div{
+    padding: 8px;
+}
+#msg{
+    font-variant: small-caps;
+    font-weight: bold;
+}
+#imagem{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+footer{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.400);
+    font-style: italic;
+}
