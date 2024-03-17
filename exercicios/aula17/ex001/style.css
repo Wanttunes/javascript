@@ -1,0 +1,70 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-color: #084061;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: 3em;
+}
+section{
+    background-color: white;
+    padding: 15px;
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.514);
+    text-align: center;
+}
+div{
+    padding: 8px;
+}
+#dados{
+    text-align: left;
+}
+#dados > p {
+    padding: 10px;
+    font-weight: bold;
+}
+#dados > input{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    background-color: rgba(113, 166, 245, 0.377);
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    margin-left: 180px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+#dados > input:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #052b41;
+    font-weight: bolder;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.566);
+}
+#foto{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    
+}
+#img > p{
+    margin: 14px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+footer{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.400);
+    font-style: italic;
+    text-align: center;
+}
