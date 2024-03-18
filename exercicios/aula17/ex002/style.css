@@ -29,8 +29,9 @@ div{
 #dados{
     text-align: left;
 }
-#dados > p {
-    padding: 10px;
+#list {
+    text-align: left;
+    padding: 50px;
     font-weight: bold;
 }
 #button{
